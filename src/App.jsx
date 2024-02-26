@@ -17,6 +17,11 @@ export function App() {
             author={'Nikollas'}
             content={'This is the content of the post'}
           />
+
+          <Post
+            author={'Nikollas'}
+            content={'This is the content of the post'}
+          />
         </main>
       </div>
     </div>
