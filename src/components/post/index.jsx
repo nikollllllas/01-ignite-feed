@@ -22,15 +22,15 @@ export function Post({ author, content, publishedAt }) {
     addSuffix: true
   })
 
-  function handleCreateNewComment(event) {
+  function handleCreateNewComment() {
     event.preventDefault()
 
     setComments([...comments, newCommentText])
-  
+
     setNewCommentText('')
   }
 
-  function handleNewCommentChange(event) {
+  function handleNewCommentChange() {
     setNewCommentText(event.target.value)
   }
 
@@ -86,7 +86,12 @@ export function Post({ author, content, publishedAt }) {
 
       <div className={styles.commentList}>
         {comments.map((comment) => {
-          return <Comment content={comment} />
+          return (
+            <Comment
+              key={comment}
+              content={comment}
+            />
+          )
         })}
       </div>
     </article>
