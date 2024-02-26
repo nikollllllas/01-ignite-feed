@@ -13,15 +13,9 @@ export function App() {
         <Sidebar>sidebar</Sidebar>
 
         <main>
-          <Post
-            author={'Nikollas'}
-            content={'This is the content of the post'}
-          />
+          <Post />
 
-          <Post
-            author={'Nikollas'}
-            content={'This is the content of the post'}
-          />
+          <Post />
         </main>
       </div>
     </div>
